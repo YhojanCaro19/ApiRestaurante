@@ -5,7 +5,40 @@ API REST para un restaurante desarrollada con **Node.js** y **Express**, que ges
 La API está protegida por **API Key** 
 
 -------------------------------------------------------------------------------------------------------------------------------------
+# Tecnologías usadas
 
+- Node.js
+- Express.js
+- SQLite3
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+# Autenticación
+
+Todos los endpoints requieren el siguiente header
+api: 123
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+# Estructura
+mi-api/
+├── .gitignore
+├── db.js
+├── index.js
+├── database.db
+├── package-lock.json
+├── package.json
+├── README.md
+├── CollectionsPostman/
+├── db/
+├── node_modules/
+└── routes/
+    ├── ingredientes.js
+    ├── mesas.js
+    ├── ordenes.js
+    └── platos.js
+    
+-------------------------------------------------------------------------------------------------------------------------------------
 
 # END POINTS
 # 1. Ingredientes
@@ -49,3 +82,9 @@ POST	  /ordenes	                  Crea una orden
 PUT	      /ordenes/:id	              Actualiza una orden existente
 DELETE	  /ordenes/:id	              Elimina una orden
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## Integrantes
+
+- Yhojan Andres Caro Gonzalez
+- Johan Sebastian Gonzalez Cartagena
