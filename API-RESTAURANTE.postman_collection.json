@@ -1,0 +1,530 @@
+{
+  "info": {
+    "_postman_id": "1b0cd24b-32ec-43e4-bf4c-16dadf64be9c",
+    "name": "API-RESTAURANTE",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52178072",
+    "_collection_link": "https://go.postman.co/collection/52178072-1b0cd24b-32ec-43e4-bf4c-16dadf64be9c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "INGREDIENTES",
+      "item": [
+        {
+          "name": "BuscarIngredientes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              },
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/ingredientes?=",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ingredientes"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReemplazarIngrediente",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"id\": 1,\r\n        \"nombre\": \"Pollito\",\r\n        \"stock\": 30,\r\n        \"unidad\": \"kg\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/ingredientes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ingredientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EliminarIngredientes",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/ingredientes/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ingredientes",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AgregarIngrediente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "   {\r\n        \"nombre\": \"cambur\",\r\n        \"stock\": 20,\r\n        \"unidad\": \"kg\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/ingredientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ingredientes"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "MESAS",
+      "item": [
+        {
+          "name": "BuscarMesa",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/mesas?api",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "mesas"
+              ],
+              "query": [
+                {
+                  "key": "api",
+                  "value": null,
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReemplazarMesa",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"id\": 1,\r\n        \"numero\": 1,\r\n        \"capacidad\": 10,\r\n        \"estado\": \"disponible\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/mesas/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "mesas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EliminarMesa",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/mesas/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "mesas",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AgregarMesa",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "  {\r\n        \"numero\": 3,\r\n        \"capacidad\": 20,\r\n        \"estado\": \"disponible\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/mesas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "mesas"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ORDENES",
+      "item": [
+        {
+          "name": "BuscarOrden",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/ordenes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ordenes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReemplazarOrden",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": " {\r\n        \"id\": 1,\r\n        \"mesaId\": 2,\r\n        \"platos\": [\r\n            1,\r\n            2,\r\n            3\r\n        ],\r\n        \"total\": 80000,\r\n        \"estado\": \"Lista\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/ordenes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ordenes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EliminarOrden",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/ordenes/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ordenes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AgregarOden",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": " {\r\n        \"id\": 1,\r\n        \"mesaId\": 3,\r\n        \"platos\": [\r\n            1\r\n        ],\r\n        \"total\": 10000,\r\n        \"estado\": \"En preparacion\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/ordenes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "ordenes"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PLATOS",
+      "item": [
+        {
+          "name": "BuscarPlato",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/platos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "platos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReemplazarPlato",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "   {\r\n        \"id\": 2,\r\n        \"nombre\": \"Pizza\",\r\n        \"precio\": 30000,\r\n        \"categoria\": \"Peruana\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/platos/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "platos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EliminarPlato",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/platos/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "platos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AgregarPlato",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api",
+                "value": "123",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"nombre\": \"Picada para 2\",\r\n        \"precio\": 30000,\r\n        \"categoria\": \"Comida rápida\"\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/platos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "platos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
