@@ -11,10 +11,6 @@ app.use((req, res, next) => {
   }
   next();
 });
-const express = require('express');
-const app = express();
-
-app.use(express.json());
 
 app.use('/mesas',        require('./routes/mesas'));
 app.use('/platos',       require('./routes/platos'));
